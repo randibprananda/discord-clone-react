@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import { ClerkProvider, RedirectToSignIn, SignedIn, SignedOut } from '@clerk/clerk-react';
 import { MantineProvider } from '@mantine/core';
 
+import CreateServerModal from './components/modals/CreateServer.tsx';
 import RootLayout from './layouts/Root.tsx';
 import HomePage from './pages/Home.tsx';
 
@@ -38,6 +39,7 @@ const RouterComponent = () => {
             index
             element={
               <ProtectedRoute>
+                <CreateServerModal />
                 <HomePage />
               </ProtectedRoute>
             }
