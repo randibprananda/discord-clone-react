@@ -33,8 +33,7 @@ const Sidebar = () => {
           className={classes.link}
           variant='subtle'
           radius={100}
-          onClick={toggleColorScheme}
-          p={0}>
+          onClick={toggleColorScheme}>
           {colorScheme === 'dark' ? <IconMoon radius={100} /> : <IconSun radius={100} />}
         </Button>
       </Stack>
