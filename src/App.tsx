@@ -1,5 +1,7 @@
+import { Text } from '@mantine/core';
+
 const App = () => {
-  return <>Hello World!</>;
+  return <Text fw={700}>Hello World!</Text>;
 };
 
 export default App;
